@@ -6,7 +6,7 @@ client.on('ready', () => {
 
 client.on(`ready`, ()=>{
   client.setInterval(async function(){
-    let ch = client.guilds.get("524185847470489601").channels;
+    let ch = client.guilds.get("550029601464909844").channels;
     let count = 0;
     ch.forEach(async function(c){
       if(c.type === "voice"){
@@ -14,7 +14,7 @@ client.on(`ready`, ()=>{
       }
     })
     setTimeout(function(){
-      ch.get("536096212047233034").setName(`Voice online ${count}`)
+      ch.get("550029601464909844").setName(`Voice online ${count}`)
     }, 500)
   }, 1000)
 })
